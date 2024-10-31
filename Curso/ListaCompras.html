@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" type="text/css" href="ListaCompras.css">
+    <script defer src="ListaCompras.js"></script>
+</head>
+<body class="corpo">
+    <header>
+        <div class="titulo">
+            <div class="carrinho">
+                <img src="Assets/Carrinho.svg" alt="Carrinho de supermercado" class="imagem">
+            </div>
+            <h1>Supermercado Família WEB</h1>
+        </div>
+    </header>
+    <div>
+        <h2>Lista de compras da mamãe:</h2>
+        <form onsubmit="clickar(event)">
+            <input type="text" placeholder="Digite um item:" class="campoInput" id="items"/>
+            <button id="botaoAdicionar" class="botaoDeAdicionar">Adicionar</button>
+        </form>
+        <section class="lista">
+            <ul id="listaDeCompras">
+                <li>Item X</li>
+                <li>Item X</li>
+                <li>Item X</li>
+                <li>Item X</li>
+                <li>Item X</li>
+                <li>Item X</li>
+                <li>Item X</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
